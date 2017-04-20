@@ -5,6 +5,8 @@ class Fixnum
     dimes = 0
     nickels = 0
     pennies = 0
+    # coins = [quarters, dimes, nickels, pennies]
+    # final_array = []
 
     until change == 0
       if change >= 25
@@ -22,7 +24,15 @@ class Fixnum
       end
     end
 
-    quarters.to_s + " quarters, " + dimes.to_s + " dimes, "+ nickels.to_s + " nickels and " + pennies.to_s + " pennies."
+    # coins.each() do |coin|
+    #   if coin != 0
+    #     final_array.push(coin.to_s)
+    #   end
+    # end
+    # final_array.join
+
+
+    "Your change is #{quarters} quarters, #{dimes} dimes, #{nickels} nickels and #{pennies} pennies."
 
   end
 end
