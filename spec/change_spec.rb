@@ -1,5 +1,6 @@
 require('rspec')
 require('change')
+require('pry')
 
 describe('Fixnum#change') do
   it('will count up to desired change in pennies')do
@@ -18,3 +19,9 @@ describe('Fixnum#change') do
     expect(42.change).to(eq('1 quarters, 1 dimes, 1 nickels and 2 pennies.'))
   end
 end
+
+# describe('Fixnum#change') do
+#   it('will count up to desired change in pennies')do
+#     expect(4.change2).to(eq('4 pennies.'))
+#   end
+# end
